@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Addtocart from "./components/Addtocart";
 import Search from "./components/Search";
 import RouteGuard from "./components/RouteGuard";
+import ItemDetail from "./components/ItemDetail";
+import CheckOut from "./components/CheckOut";
+
 
 const App = () => {
   return (
@@ -21,6 +24,8 @@ const App = () => {
             </RouteGuard>
           }
         />
+        <Route path="/Detail/:id" element={<ItemDetail />} />
+        <Route path="/checkout" element={<CheckOut />} />
       </Routes>
     </div>
   );

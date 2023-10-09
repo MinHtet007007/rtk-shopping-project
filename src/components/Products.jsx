@@ -11,6 +11,7 @@ const Products = () => {
   const fetchData = async () => {
     const api = await fetch(`https://fakestoreapi.com/products`);
     const data = await api.json();
+    // console.log(data);
     setProducts(data);
     setIsLoading(false);
   };
